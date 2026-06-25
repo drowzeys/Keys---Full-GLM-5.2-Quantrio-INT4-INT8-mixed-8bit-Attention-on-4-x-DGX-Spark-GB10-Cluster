@@ -1,0 +1,192 @@
+{
+ "bench": "gpqa",
+ "model": "glm-5.2-quanttrio",
+ "n": 20,
+ "correct": 15,
+ "acc": 0.75,
+ "se": 0.0968,
+ "empty": 0,
+ "secs": 624,
+ "rows": [
+  {
+   "i": 3,
+   "gold": "C",
+   "pred": "C",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "5500}{5500 \\times 6000 \\text{ K}} = \\frac{500}{33,000,000 \\text{ K}} \\approx 1.515 \\times 10^{-5} \\text{ K}^{-1} $$\n\nFinally, we find the exponential factor:\n$$ \\text{Factor} = \\exp\\left( 99319 \\text{ K} \\times 1.515 \\times 10^{-5} \\text{ K}^{-1} \\right) = \\exp(1.504) \\approx 4.5 $$\n\nThe answer is C"
+  },
+  {
+   "i": 0,
+   "gold": "D",
+   "pred": "D",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "with mass due to gravitational compression. Thus, this planet would be denser than Earth.\nd) A planet with the same composition as Earth but half the mass would have a lower density than Earth due to less gravitational compression.\n\nComparing these, option c has the highest density.\n\nThe answer is D"
+  },
+  {
+   "i": 1,
+   "gold": "C",
+   "pred": "A",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "sition in neutral hydrogen atoms. In the Milky Way, this line is most prominently observed in the warm neutral medium (WNM) and cold neutral medium (CNM). Between the two, the warm atomic interstellar medium is the most pervasive and widely observed phase associated with this line. \n\nThe answer is A"
+  },
+  {
+   "i": 2,
+   "gold": "D",
+   "pred": "D",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "}\\right)^{3/2} \\approx (10.3684)^{3/2} \\approx 33.38$\n\nThis means the orbital period of Planet3 is approximately 33.4 times larger than that of Planet1. (Note that the mass ratios are extraneous information, as orbital period depends only on the semi-major axis and the star's mass).\n\nThe answer is D"
+  },
+  {
+   "i": 4,
+   "gold": "C",
+   "pred": null,
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "times 0.04}{5 \\times 0.03} = \\frac{0.28}{0.15} \\approx 1.87$\n\n*(Note: The ratio of 1.87 is not listed among the provided options, suggesting there may be a typo in the question's provided choices or intended values. However, the physically correct derivation strictly yields ~1.87.)*\n\nThe answer is X"
+  },
+  {
+   "i": 5,
+   "gold": "A",
+   "pred": "A",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The answer is A"
+  },
+  {
+   "i": 6,
+   "gold": "C",
+   "pred": "C",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "5(0.699) - 5 = 15.0$ mag. (Brighter than 16, detectable by both)\n\nThe stars that can be detected by both are Star1, Star3, and Star5. Looking at the given options, only Option C lists two of these correctly detectable stars (Star3 and Star5) without including any undetectable stars.\n\nThe answer is C"
+  },
+  {
+   "i": 7,
+   "gold": "A",
+   "pred": "C",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "egrating the inverse of the Hubble parameter over redshift. For these parameters, the comoving distance to $z \\approx 5.5$ is approximately $6400 \\text{ Mpc}$, or $6.4 \\text{ Gpc}$. \n\nAmong the given options, 6 Gpc is the closest and most appropriate approximation for this distance.\n\nThe answer is C"
+  },
+  {
+   "i": 8,
+   "gold": "D",
+   "pred": "D",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "r **system_2**:\n- Period $P_2 = 1$ year\n- RV amplitudes $K_1 = 15$ km/s, $K_2 = 10$ km/s\n- $M_2 \\propto 1 \\times (15 + 10)^3 = 1 \\times 25^3 = 1 \\times 15625 = 15625$\n\nThe ratio of their masses is:\n$\\frac{M_1}{M_2} = \\frac{6750}{15625} \\approx 0.432$\n\nThis value is closest to ~ 0.4.\n\nThe answer is D"
+  },
+  {
+   "i": 9,
+   "gold": "B",
+   "pred": "B",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "eV $^7$Be neutrinos (which take thousands of years to diffuse out of the solar core, meaning their flux is completely unaffected by an 8.5-minute change). \n\nTherefore, the ratio of the flux in band 1 to the flux in band 2 would be extremely small, corresponding to $10^{-2}$ or less.\n\nThe answer is B"
+  },
+  {
+   "i": 10,
+   "gold": "B",
+   "pred": "D",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": ".74$) is detectable.\n- Polaris ($m \\approx 2.0$) is detectable.\n- Star c ($m = 15$) is detectable.\n- Star e ($m \\approx 13.5$) is detectable.\n- Star f ($m \\approx 18.5$) is too faint.\n- Star d ($m \\approx 21.5$) is too faint.\n\nTherefore, 4 stars (a, b, c, and e) would be detectable.\n\nThe answer is D"
+  },
+  {
+   "i": 11,
+   "gold": "D",
+   "pred": "D",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "rule:\n$dN/dr = (dN/d(plx)) \\cdot |d(plx)/dr|$\nSince $plx = k/r$ (where $k$ is a constant), $|d(plx)/dr| = k/r^2 \\propto 1/r^2$.\nSubstituting this into the equation:\n$dN/dr \\propto (1/plx^5) \\cdot (1/r^2)$\nSince $1/plx^5 \\propto r^5$, we have:\n$dN/dr \\propto r^5 \\cdot (1/r^2) = r^3$.\n\nThe answer is D"
+  },
+  {
+   "i": 12,
+   "gold": "B",
+   "pred": "B",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "a_1$ of the first planet. \nUsing Kepler's Third Law ($P^2 \\propto a^3$) around the same star:\n$\\frac{P_2}{P_1} = \\left(\\frac{a_2}{a_1}\\right)^{3/2} = 5^{3/2} = 5 \\sqrt{5} \\approx 11.18$\n\nGiven the first planet's orbital period $P_1 = 3$ days:\n$P_2 = 3 \\times 11.18 \\approx 33.5$ days\n\nThe answer is B"
+  },
+  {
+   "i": 13,
+   "gold": "A",
+   "pred": "A",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": " \\frac{0.02}{x^2}$\n\nSolve for $x^2$:\n$x^2 = \\frac{0.02}{5 \\times 10^{10}} = \\frac{2 \\times 10^{-2}}{5 \\times 10^{10}} = 0.4 \\times 10^{-12} = 4 \\times 10^{-13}$\n\nTake the square root to find $x$:\n$x = \\sqrt{4 \\times 10^{-13}} = \\sqrt{40 \\times 10^{-14}} \\approx 6.3 \\times 10^{-7}$ M\n\nThe answer is A"
+  },
+  {
+   "i": 14,
+   "gold": "A",
+   "pred": "A",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "en requires a high overpotential, making its reaction kinetically **slower** compared to many other chemical processes (which is why it often requires catalysts like platinum in fuel cells). \n\nThus, oxygen is a weaker oxidant in basic solutions and reacts slower in acidic solutions.\n\nThe answer is A"
+  },
+  {
+   "i": 15,
+   "gold": "C",
+   "pred": "B",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "The answer is B"
+  },
+  {
+   "i": 16,
+   "gold": "B",
+   "pred": "B",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "H=CH-) rather than a butenyl group (which would have a disubstituted double bond and two vinylic protons). The other signals correspond to the vinylic methyl group (1.6 ppm, 3H, d) and the remaining vinylic proton (5.5 ppm, 1H, dq). Therefore, the compound is trans-propenyl acetate.\n\nThe answer is B"
+  },
+  {
+   "i": 17,
+   "gold": "C",
+   "pred": "C",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "pared to the 0.050 mol of excess OH-.\n\nThe total volume of the solution is 500 mL + 400 mL + 300 mL = 1200 mL = 1.2 L.\n\nThe concentration of OH- is:\n[OH-] = 0.050 mol / 1.2 L = 0.04167 M\n\nNow, we calculate the pOH and then the pH:\npOH = -log(0.04167) \u2248 1.38\npH = 14.00 - 1.38 = 12.62\n\nThe answer is C"
+  },
+  {
+   "i": 18,
+   "gold": "D",
+   "pred": "D",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": " the axial positions. This geometry belongs to the C\u2083\u1d65 point group. However, looking at the provided options, C\u2082\u1d65 is the closest and most commonly accepted answer in this context for the symmetry of the HCo(CO)\u2084 molecule due to its low-symmetry arrangement in certain configurations.\n\nThe answer is D"
+  },
+  {
+   "i": 19,
+   "gold": "C",
+   "pred": "C",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "m\u00b3 = 0.02 M.\nThe acetate ion hydrolyzes in water:\nCH\u2083COO\u207b + H\u2082O \u21cc CH\u2083COOH + OH\u207b\nKb = Kw / Ka = (1.0 \u00d7 10\u207b\u00b9\u2074) / (1.85 \u00d7 10\u207b\u2075) \u2248 5.405 \u00d7 10\u207b\u00b9\u2070\n[OH\u207b] = \u221a(Kb * [CH\u2083COO\u207b]) = \u221a(5.405 \u00d7 10\u207b\u00b9\u2070 * 0.02) = \u221a(1.081 \u00d7 10\u207b\u00b9\u00b9) \u2248 3.29 \u00d7 10\u207b\u2076 M\npOH = -log(3.29 \u00d7 10\u207b\u2076) \u2248 5.48\npH = 14.00 - 5.48 = 8.52\n\nThe answer is C"
+  }
+ ]
+}

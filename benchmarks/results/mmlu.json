@@ -1,0 +1,372 @@
+{
+ "bench": "mmlu_pro",
+ "model": "glm-5.2-quanttrio",
+ "n": 40,
+ "correct": 33,
+ "acc": 0.825,
+ "se": 0.0601,
+ "empty": 0,
+ "secs": 743,
+ "rows": [
+  {
+   "i": 0,
+   "gold": "I",
+   "pred": "I",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The answer is I"
+  },
+  {
+   "i": 2,
+   "gold": "J",
+   "pred": "G",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "hough \"downsizing\" is more commonly associated with redundancies, the context of the options and the specific phrasing points to a specific source text). The two main issues associated with upsizing are involvement (employees' right to know) and remuneration (the severance package).\n\nThe answer is G"
+  },
+  {
+   "i": 1,
+   "gold": "F",
+   "pred": "F",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "Managers are entrusted to run the company in the best interest of shareholders. Specifically, they have a duty to act for the benefit of the company, as well as a duty of care and skill and of diligence.\n\nThe answer is F"
+  },
+  {
+   "i": 3,
+   "gold": "C",
+   "pred": "H",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "The answer is H"
+  },
+  {
+   "i": 4,
+   "gold": "G",
+   "pred": "G",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "d conventional finance include the prohibition of charging and paying interest (Riba), the prohibition on uncertain (Gharar) and speculative (Maysir) transactions, the prohibition of sinful investments, and the requirement for all financial products to be backed by tangible assets. \n\nThe answer is G"
+  },
+  {
+   "i": 5,
+   "gold": "A",
+   "pred": "A",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The three broad groups of organizational characteristics segmentation criteria are organizational size, industry type, and geographical location.\n\nThe answer is A"
+  },
+  {
+   "i": 6,
+   "gold": "D",
+   "pred": "D",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "Pine and Gilmore's Experience Economy framework consists of four realms based on two dimensions: customer participation (passive vs. active) and connection or environmental relationship (absorption vs. immersion). \n\nThe answer is D"
+  },
+  {
+   "i": 7,
+   "gold": "J",
+   "pred": "J",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "olves watching subjects without direct questioning.\n- **I. Case Study** focuses on an in-depth look at a single subject or small group.\n\n**J. Quantitative** is the correct category, as it relies on standardized questions to gather data from many respondents for statistical analysis.\n\nThe answer is J"
+  },
+  {
+   "i": 8,
+   "gold": "E",
+   "pred": "E",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The answer is E"
+  },
+  {
+   "i": 9,
+   "gold": "F",
+   "pred": "F",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The scenario describes how services cannot be stored, saved, or reused once the time of delivery has passed. In marketing and economics, this characteristic of services is known as perishability. \n\nThe answer is F"
+  },
+  {
+   "i": 10,
+   "gold": "E",
+   "pred": "E",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The answer is E"
+  },
+  {
+   "i": 11,
+   "gold": "G",
+   "pred": "C",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "ypically include political, economic, socio-cultural, technological, global, competitive, regulatory, and environmental factors. Weather conditions can also be considered an external factor. The personal preferences of the marketing team are an internal factor, not an external one. \n\nThe answer is C"
+  },
+  {
+   "i": 12,
+   "gold": "J",
+   "pred": "J",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The term for the \"rule of thumb\" type of bias in decision making is heuristics, which are mental shortcuts used to simplify decisions.\n\nThe answer is J"
+  },
+  {
+   "i": 13,
+   "gold": "D",
+   "pred": "B",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "The answer is B"
+  },
+  {
+   "i": 14,
+   "gold": "F",
+   "pred": "F",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": " choices regarding how to behave based on their values and beliefs is Expectancy theory (often associated with Vroom's Expectancy Theory in motivation, where individuals choose behaviors based on their expectations of outcomes and the valence or value they place on those outcomes). \n\nThe answer is F"
+  },
+  {
+   "i": 15,
+   "gold": "J",
+   "pred": "J",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "Lateral communication refers to the flow of information between people, departments, or functions at the same hierarchical level within an organization. \n\nThe answer is J"
+  },
+  {
+   "i": 16,
+   "gold": "F",
+   "pred": "A",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "1-p)(0)] \\approx 0.53$\n\nContinuing the backward induction for all nodes down to $t=0$ yields the initial option price. The intermediate values converge to an option price of approximately $0.499$. Since the provided options are whole numbers scaled by 100, this corresponds to 50.0. \n\nThe answer is A"
+  },
+  {
+   "i": 17,
+   "gold": "A",
+   "pred": "A",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "0}{9}\\right)$$\n$$p \\ge \\frac{\\ln(10/9)}{\\ln(11/9)}$$\n\nNow, we calculate the numerical value:\n$$\\ln(10/9) \\approx 0.10536$$\n$$\\ln(11/9) \\approx 0.20067$$\n$$p \\ge \\frac{0.10536}{0.20067} \\approx 0.525$$\n\nThus, George must believe the Bulls have at least a 0.525 probability of winning.\n\nThe answer is A"
+  },
+  {
+   "i": 18,
+   "gold": "B",
+   "pred": "B",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "al weighted investment = $20,000 + $40,500 + $17,500 = $78,000\n\nThe ratio of their average investments is 66,000 : 78,000, which simplifies to 11 : 13. \nThe total parts are 11 + 13 = 24.\n\n**Alcott's Share:** (11 / 24) \u00d7 $8,736 = $4,004\n**Buxton's Share:** (13 / 24) \u00d7 $8,736 = $4,732\n\nThe answer is B"
+  },
+  {
+   "i": 19,
+   "gold": "D",
+   "pred": "D",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "t of Goods Available for Sale = Beginning Inventory + Purchases\n   Cost of Goods Available for Sale = $30,000 + $87,500 = $117,500\n\n4. **Calculate the Ending Inventory:**\n   Ending Inventory = Cost of Goods Available for Sale - COGS\n   Ending Inventory = $117,500 - $61,200 = $56,300\n\nThe answer is D"
+  },
+  {
+   "i": 20,
+   "gold": "J",
+   "pred": "J",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "and a single rate of 30%:**\n- NPF for 15-15% = (1 - 0.15) \u00d7 (1 - 0.15) = 0.85 \u00d7 0.85 = 0.7225\n- NPF for 30% = (1 - 0.30) = 0.70\nSince 0.70 < 0.7225, the single rate of 30% gives a larger discount and is better.\n\nTherefore, the series 30-10-2.5% and the single rate of 30% are better.\n\nThe answer is J"
+  },
+  {
+   "i": 21,
+   "gold": "I",
+   "pred": "I",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "Magee Data: 300 \u00d7 23 1/8 = 300 \u00d7 23.125 = $6,937.50\nGiant Industrials: 400 \u00d7 23 1/2 = 400 \u00d7 23.5 = $9,400.00\nTotal = $6,937.50 + $9,400.00 = $16,337.50\n\nThe answer is I"
+  },
+  {
+   "i": 22,
+   "gold": "E",
+   "pred": "E",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The answer is E"
+  },
+  {
+   "i": 23,
+   "gold": "H",
+   "pred": "H",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "l revenue and subtract her total costs.\n\n1. **Cost of the option:** $175\n2. **Cost to exercise the option:** 100 shares \u00d7 $14.50 = $1,450\n3. **Total cost:** $175 + $1,450 = $1,625\n\n4. **Revenue from selling the stock:** 100 shares \u00d7 $17 = $1,700\n\n5. **Profit:** $1,700 - $1,625 = $75\n\nThe answer is H"
+  },
+  {
+   "i": 24,
+   "gold": "J",
+   "pred": "I",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "\u00d7 17 = $46.75\n- Mileage: $113.52\n- Gas: $24.03\nTotal = $216.30 (no match)\n\nLooking at the options, $253.40 (I) is close to $248.30. Perhaps there's a slight variation in interpretation or rounding. Given the closest match and typical problem structures, the most plausible answer is:\n\nThe answer is I"
+  },
+  {
+   "i": 25,
+   "gold": "J",
+   "pred": "J",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "me Statement** (not the balance sheet).\n- (E) Prepaid expenses: This is a payment made in advance for goods or services to be received, so it belongs on the **Asset side**.\n\nMatching these classifications to the given options, we see that Option J perfectly aligns with our analysis.\n\nThe answer is J"
+  },
+  {
+   "i": 26,
+   "gold": "H",
+   "pred": "H",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": " asset values provided:\nCash: $3,390\nNotes Receivable: $2,905\nAccounts Receivable: $8,215\nMerchandise Inventory: $23,600\nStore Supplies: $720\nStore Fixtures: $2,895\nFurniture and Equipment: $5,600\n\nTotal Assets = $3,390 + $2,905 + $8,215 + $23,600 + $720 + $2,895 + $5,600 = $47,325.\n\nThe answer is H"
+  },
+  {
+   "i": 27,
+   "gold": "F",
+   "pred": "F",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The list price is $32 and the discount rate is 30%.  \nDiscount amount = 30% of $32 = 0.30 \u00d7 $32 = $9.60.  \nNet cost = $32 - $9.60 = $22.40.  \n\nThe answer is F"
+  },
+  {
+   "i": 28,
+   "gold": "H",
+   "pred": "H",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "Bankers' interest uses a 360-day year, while exact interest uses a 365-day year. \n\nBankers' interest = $2,000 \u00d7 0.06 \u00d7 (143 / 360) = $47.666...\nExact interest = $2,000 \u00d7 0.06 \u00d7 (143 / 365) = $47.013...\n\nDifference = $47.666... - $47.013... = $0.653... \u2248 $0.66\n\nThe answer is H"
+  },
+  {
+   "i": 29,
+   "gold": "C",
+   "pred": "C",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "Harry works 9 hours a day for 6 days, totaling 54 hours. At $2.895 per hour, his pay is 54 \u00d7 2.895 = $156.33.\n\nThe answer is C"
+  },
+  {
+   "i": 30,
+   "gold": "E",
+   "pred": "E",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "To find Steven Moore's monthly payment, divide the total cost of the car by the number of months:\n$3,462.20 \u00f7 35 = $98.92\n\nThe answer is E"
+  },
+  {
+   "i": 31,
+   "gold": "H",
+   "pred": "H",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": " + Variable Cost = $140,000 + 0.75x$\n\nSetting Revenue equal to Total Cost:\n$1.25x = 140,000 + 0.75x$\n$0.50x = 140,000$\n$x = 280,000$ items\n\nTo find the sales revenue at the break-even point, multiply the number of items by the selling price:\nRevenue = $1.25 \\times 280,000 = $350,000\n\nThe answer is H"
+  },
+  {
+   "i": 32,
+   "gold": "J",
+   "pred": "F",
+   "fin": "stop",
+   "ok": false,
+   "empty": false,
+   "resp": "25 * [0.00791667 * 1.205918] / [0.205918]\nM = 6297.5625 * 0.0095386 / 0.205918\nM = 6297.5625 * 0.046329\nM \u2248 $291.78\n\nDue to slight variations in rounding conventions (e.g., rounding the tax to $341.31 and standard financial rounding), the closest matching option provided is $288.99.\n\nThe answer is F"
+  },
+  {
+   "i": 33,
+   "gold": "I",
+   "pred": "I",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "To find the break-even point, set C = R and solve for x in each case:\n(a) 10x + 600 = 30x \u2192 20x = 600 \u2192 x = 30 units\n(b) 5x + 200 = 8x \u2192 3x = 200 \u2192 x = 66\u2154 units\n(c) 0.2x + 50 = 0.3x \u2192 0.1x = 50 \u2192 x = 500 units\n(d) 1800x + 3000 = 2500x \u2192 700x = 3000 \u2192 x = 4\u2154 units\n\nThe answer is I"
+  },
+  {
+   "i": 34,
+   "gold": "I",
+   "pred": "I",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "The tax rate is 11.5% (or 0.115) of the assessed value. The assessment rate is 30% (or 0.30) of the market value.  \nGiven tax paid = $1,794:  \nAssessed value = $1,794 / 0.115 = $15,600.  \nMarket value = $15,600 / 0.30 = $52,000.  \n\nThe answer is I"
+  },
+  {
+   "i": 35,
+   "gold": "I",
+   "pred": "I",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": " $120\n\nNow, sum up all the annual costs:\n$1,380 (mortgage interest) + $480 (investment interest) + $500 (depreciation) + $240 (taxes) + $30 (water) + $70 (insurance) + $120 (repairs) = $2,820.\n\nFinally, divide the total annual cost by 12 to find the monthly cost:\n$2,820 / 12 = $235.\n\nThe answer is I"
+  },
+  {
+   "i": 36,
+   "gold": "H",
+   "pred": "H",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "eclining rate:** \n   20% * 2 = 40%.\n3. **Calculate the first year's depreciation:** \n   $3,000 * 40% = $1,200.\n4. **Calculate the book value at the beginning of the second year:** \n   $3,000 - $1,200 = $1,800.\n5. **Calculate the second year's depreciation:** \n   $1,800 * 40% = $720.\n\nThe answer is H"
+  },
+  {
+   "i": 37,
+   "gold": "A",
+   "pred": "A",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "To find the property tax, multiply the assessed value by the tax rate per $100:\n$7,800 / $100 = 78\n78 * $2.80 = $218.40\n\nThe answer is A"
+  },
+  {
+   "i": 38,
+   "gold": "H",
+   "pred": "H",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": " the depreciation using the straight-line method, subtract the residual value from the cost and divide by the useful life: ($1,200 - $0) / 6 = $200 per year. After the first year, the book value is $1,200 - $200 = $1,000. After the second year, the book value is $1,000 - $200 = $800.\nThe answer is H"
+  },
+  {
+   "i": 39,
+   "gold": "J",
+   "pred": "J",
+   "fin": "stop",
+   "ok": true,
+   "empty": false,
+   "resp": "ver, if the energy cost is calculated differently (e.g., using 1 HP = 0.746 kW and efficiency as given), the correct \\( h \\) is approximately 2950 hours, which is not among the options. \n\nGiven the discrepancy, the problem might have an error, but the correct method is shown above. \n\nThe answer is J"
+  }
+ ]
+}

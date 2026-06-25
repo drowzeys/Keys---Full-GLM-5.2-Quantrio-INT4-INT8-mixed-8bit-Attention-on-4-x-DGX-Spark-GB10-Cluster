@@ -1,0 +1,370 @@
+{
+ "model": "glm-5.2-quanttrio",
+ "n": 40,
+ "correct": 39,
+ "acc": 0.975,
+ "empty": 0,
+ "secs": 305,
+ "rows": [
+  {
+   "i": 2,
+   "gold": "70000",
+   "pred": "70000",
+   "fin": "stop",
+   "resp": "The initial value of the house is $80,000. The repairs increased this value by 150%, which is $80,000 * 1.50 = $120,000. So, the new value of the house is $80,000 + $120,000 = $200,000. Josh's total costs were the purchase price plus repairs: $80,000 + $50,000 = $130,000. His profit is the final value minus his total costs: $200,000 - $130,000 = $70,000.\n\nThe answer is 70000",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 0,
+   "gold": "18",
+   "pred": "18",
+   "fin": "stop",
+   "resp": "Janet starts with 16 eggs. She uses 3 for breakfast and 4 for muffins, leaving 16 - 3 - 4 = 9 eggs to sell. At $2 per egg, she makes 9 * 2 = 18 dollars.\nThe answer is 18",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 3,
+   "gold": "540",
+   "pred": "540",
+   "fin": "stop",
+   "resp": "James runs 3 sprints per session, 3 times a week, for a total of 3 * 3 = 9 sprints. Each sprint is 60 meters, so the total distance is 9 * 60 = 540 meters.\nThe answer is 540",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 1,
+   "gold": "3",
+   "pred": "3",
+   "fin": "stop",
+   "resp": "The robe takes 2 bolts of blue fiber. Half of 2 is 1, so it takes 1 bolt of white fiber. In total, 2 + 1 = 3 bolts.\nThe answer is 3",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 4,
+   "gold": "20",
+   "pred": "20",
+   "fin": "stop",
+   "resp": "Each chicken needs 3 cups of feed per day, so for 20 chickens, the total daily feed required is 20 * 3 = 60 cups. Wendi gives 15 cups in the morning and 25 cups in the afternoon, totaling 15 + 25 = 40 cups. The remaining feed needed for the final meal is 60 - 40 = 20 cups.\n\nThe answer is 20",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 5,
+   "gold": "64",
+   "pred": "64",
+   "fin": "stop",
+   "resp": "Every pair of glasses costs $5 + $3 = $8. For 16 glasses, there are 8 pairs, so 8 \u00d7 $8 = $64.\nThe answer is 64",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 6,
+   "gold": "260",
+   "pred": "260",
+   "fin": "stop",
+   "resp": "Seattle has 20 sheep. Charleston has 4 times as many, so 4 \u00d7 20 = 80 sheep. Toulouse has twice as many as Charleston, so 2 \u00d7 80 = 160 sheep. Together they have 20 + 80 + 160 = 260 sheep.\n\nThe answer is 260",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 7,
+   "gold": "160",
+   "pred": "160",
+   "fin": "stop",
+   "resp": "First, Carla downloads 40% of 200 GB, which is 80 GB. At 2 GB/minute, this takes 40 minutes. Then Windows forces a 20-minute restart. Since the download restarts from the beginning, she must download the full 200 GB again, which takes 100 minutes. Total time = 40 + 20 + 100 = 160 minutes.\n\nThe answer is 160",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 8,
+   "gold": "45",
+   "pred": "45",
+   "fin": "stop",
+   "resp": " covering 0 miles.\nHe then drives for 0.5 hours at 30 mph, covering 15 miles toward home.\nThe total time for the return trip is 4 hours, so the remaining time is 4 - 2 - 0.5 = 1.5 hours.\nIn the remaining 1.5 hours, he drives at 80 mph, covering 1.5 * 80 = 120 miles toward home.\nTotal distance covered toward home is 15 + 120 = 135 miles.\nDistance from home is 180 - 135 = 45 miles.\n\nThe answer is 45",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 9,
+   "gold": "460",
+   "pred": "460",
+   "fin": "stop",
+   "resp": "Regular pay: 40 hours \u00d7 $10/hour = $400.\nOvertime rate: $10 \u00d7 1.2 = $12/hour.\nOvertime pay: 5 hours \u00d7 $12/hour = $60.\nTotal earnings: $400 + $60 = $460.\n\nThe answer is 460",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 10,
+   "gold": "366",
+   "pred": "366",
+   "fin": "stop",
+   "resp": "First month: 60 downloads.\nSecond month: 3 \u00d7 60 = 180 downloads.\nThird month: 180 reduced by 30% is 180 \u00d7 0.70 = 126 downloads.\nTotal: 60 + 180 + 126 = 366 downloads.\n\nThe answer is 366",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 11,
+   "gold": "694",
+   "pred": "694",
+   "fin": "stop",
+   "resp": "Calculate the cost for each type of pastry:\n- Donuts: 3 \u00d7 $68 = $204\n- Mini cupcakes: 2 \u00d7 $80 = $160\n- Mini cheesecakes: 6 \u00d7 $55 = $330\n\nAdd them together for the total cost:\n$204 + $160 + $330 = $694\n\nThe answer is 694",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 12,
+   "gold": "13",
+   "pred": "13",
+   "fin": "stop",
+   "resp": "he revenue from selling 7 lemons at $1.5 each is $7 \\times 1.5 = 10.5$. The yearly cost for water and feed is $3$, so the net profit per year is $10.5 - 3 = 7.5$. To find when he starts earning money, we set the total net profit greater than the initial cost: $7.5y > 90$. Solving for $y$, we get $y > 12$. Since he needs to strictly surpass the initial cost, it will take 13 years.\n\nThe answer is 13",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 13,
+   "gold": "18",
+   "pred": "18",
+   "fin": "stop",
+   "resp": "d at the green house, leaving her with $x - \\frac{x}{3} = \\frac{2x}{3}$.\n2. She sold 2 more at the red house, leaving her with $\\frac{2x}{3} - 2$.\n3. She sold half of what was left at the orange house, leaving her with the other half: $\\frac{1}{2}(\\frac{2x}{3} - 2) = \\frac{x}{3} - 1$.\nWe are told she has 5 vacuum cleaners left, so:\n$\\frac{x}{3} - 1 = 5$\n$\\frac{x}{3} = 6$\n$x = 18$\n\nThe answer is 18",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 14,
+   "gold": "60",
+   "pred": "60",
+   "fin": "stop",
+   "resp": "Contemporary: 20% of 20 = 4 students.\nRemaining: 20 - 4 = 16 students.\nJazz: 25% of 16 = 4 students.\nHip-hop: 16 - 4 = 12 students.\nPercentage: (12 / 20) \u00d7 100 = 60%.\n\nThe answer is 60",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 15,
+   "gold": "125",
+   "pred": "125",
+   "fin": "stop",
+   "resp": "To determine the maximum profit, we calculate the expected profit for each plan. \n\nFor jewelry:\nProfit = $5,000 \u00d7 2.5% = $5,000 \u00d7 0.025 = $125\n\nFor electronic gadgets:\nProfit = $8,000 \u00d7 1.2% = $8,000 \u00d7 0.012 = $96\n\nComparing the two, the jewelry yields a higher profit ($125 vs. $96). Therefore, the merchant should choose the jewelry to maximize profit.\n\nThe answer is 125",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 16,
+   "gold": "230",
+   "pred": "230",
+   "fin": "stop",
+   "resp": "Both trains follow the same route, traveling 80 miles on the first day and 150 miles on the second day. The total distance covered by each train is the sum of the distances traveled on both days: 80 + 150 = 230 miles.\n\nThe answer is 230",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 17,
+   "gold": "57500",
+   "pred": "57500",
+   "fin": "stop",
+   "resp": "First, calculate her weekly earnings: $20/hour \u00d7 35 hours = $700 for teaching, and $30/hour \u00d7 15 hours = $450 for coaching. Her total weekly pay is $700 + $450 = $1,150. Multiply this by 50 weeks to get her annual salary: $1,150 \u00d7 50 = $57,500.\n\nThe answer is 57500",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 18,
+   "gold": "7",
+   "pred": "7",
+   "fin": "stop",
+   "resp": "Claire eats 3 eggs per day. In 4 weeks (28 days), she eats 3 * 28 = 84 eggs. Since a dozen is 12 eggs, she eats 84 / 12 = 7 dozen eggs.\nThe answer is 7",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 19,
+   "gold": "6",
+   "pred": "6",
+   "fin": "stop",
+   "resp": "To average 4 miles per hour over a 12-mile trail, Marissa must complete the entire hike in 12 / 4 = 3 hours. She has already hiked for 1 + 1 = 2 hours, leaving her 1 hour to finish the remaining 12 - 4 - 2 = 6 miles. Therefore, she needs to walk at a speed of 6 / 1 = 6 miles per hour.\n\nThe answer is 6",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 20,
+   "gold": "15",
+   "pred": "15",
+   "fin": "stop",
+   "resp": "r. After spilling 1 liter, 9 liters of orange drink remain. Assuming the spilled drink is also 2/3 water, the remaining orange drink contains 9 * (2/3) = 6 liters of water. \n\nThe 15 liters of pineapple drink is 3/5 water, so it contains 15 * (3/5) = 9 liters of water.\n\nThe total volume of the remaining mixture is 9 + 15 = 24 liters. The total amount of water is 6 + 9 = 15 liters.\n\nThe answer is 15",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 21,
+   "gold": "14",
+   "pred": "14",
+   "fin": "stop",
+   "resp": "Raymond is 6 years older than Samantha, so he is currently 31 + 6 = 37 years old.\nHe had his son at age 23, which was 37 - 23 = 14 years ago.\n\nThe answer is 14",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 22,
+   "gold": "7",
+   "pred": "7",
+   "fin": "stop",
+   "resp": "First 3 customers bought 1 DVD each: 3 \u00d7 1 = 3 DVDs.\nNext 2 customers bought 2 DVDs each: 2 \u00d7 2 = 4 DVDs.\nLast 3 customers bought 0 DVDs: 3 \u00d7 0 = 0 DVDs.\nTotal DVDs sold = 3 + 4 + 0 = 7.\n\nThe answer is 7",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 23,
+   "gold": "8",
+   "pred": "8",
+   "fin": "stop",
+   "resp": "From 1:00 PM to 5:00 PM is 4 hours. At 2 centimeters per hour, the candle melts 4 \u00d7 2 = 8 centimeters.\nThe answer is 8",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 24,
+   "gold": "26",
+   "pred": "26",
+   "fin": "stop",
+   "resp": "Let the original price be \\( P \\). A 25% discount means Kyle paid 75% of the original price:\n\\[ 0.75P = 19.50 \\]\n\\[ P = \\frac{19.50}{0.75} = 26 \\]\n\nThe answer is 26",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 25,
+   "gold": "2",
+   "pred": "2",
+   "fin": "stop",
+   "resp": "Let the number of pizza boxes be \\( x \\). The total cost is:\n\\( 12 + 5(3) + 4(1.50) + 8.50x = 50 \\)\n\nCalculate the known costs:\n\\( 12 + 15 + 6 = 33 \\)\n\nSo:\n\\( 33 + 8.50x = 50 \\)\n\\( 8.50x = 17 \\)\n\\( x = 2 \\)\n\nThe answer is 2",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 26,
+   "gold": "243",
+   "pred": "243",
+   "fin": "stop",
+   "resp": "To find the total amount spent, first calculate the cost for each type of clothing item by multiplying the price per item by the number of items bought:\n- Shorts: 3 \u00d7 $16.50 = $49.50\n- Pants: 3 \u00d7 $22.50 = $67.50\n- Shoes: 3 \u00d7 $42 = $126\n\nNext, add these amounts together to get the total cost:\n$49.50 + $67.50 + $126 = $243\n\nThe answer is 243",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 27,
+   "gold": "16",
+   "pred": "16",
+   "fin": "stop",
+   "resp": "Cynthia eats 1 serving per night for 60 days, so she needs 60 servings. Each carton has 15 servings, so she needs 60 / 15 = 4 cartons. At $4.00 per carton, she spends 4 * $4.00 = $16.00.\n\nThe answer is 16",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 28,
+   "gold": "25",
+   "pred": "25",
+   "fin": "stop",
+   "resp": "The total trip is 60 miles. The second stop was 15 miles before the end, so it occurred at the 60 - 15 = 45-mile mark. The first stop was at the 20-mile mark. The distance between the two stops is 45 - 20 = 25 miles.\n\nThe answer is 25",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 29,
+   "gold": "104",
+   "pred": "104",
+   "fin": "stop",
+   "resp": "The two pairs of high heels cost $33 and 2 * $33 = $66, so together they cost $33 + $66 = $99. Since the heels together cost $5 less than the boots, the boots cost $99 + $5 = $104.\n\nThe answer is 104",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 30,
+   "gold": "109",
+   "pred": "109",
+   "fin": "stop",
+   "resp": "Let Darrell's age be 7x and Allen's age be 11x. Their total age is 7x + 11x = 18x = 162, so x = 9. Allen's current age is 11 * 9 = 99. In 10 years, Allen's age will be 99 + 10 = 109.\nThe answer is 109",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 31,
+   "gold": "80",
+   "pred": "80",
+   "fin": "stop",
+   "resp": "The first friend guesses 80.\nThe second friend guesses 20 more than half of 80, which is 40 + 20 = 60.\nThe third friend guesses 25% more than 80, which is 80 + 20 = 100.\nThe average of their guesses is (80 + 60 + 100) / 3 = 240 / 3 = 80.\n\nThe answer is 80",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 32,
+   "gold": "35",
+   "pred": "35",
+   "fin": "stop",
+   "resp": "Each day, John spends 10 dogs \u00d7 0.5 hours/dog = 5 hours taking care of the dogs. \nOver a week (7 days), he spends 5 hours/day \u00d7 7 days = 35 hours.\n\nThe answer is 35",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 33,
+   "gold": "70",
+   "pred": "70",
+   "fin": "stop",
+   "resp": "Let $g$ be the number of gold coins and $s$ be the number of silver coins. We are given:\n1) $g + s = 110$\n2) $g = s + 30$\n\nSubstitute the second equation into the first:\n$(s + 30) + s = 110$\n$2s + 30 = 110$\n$2s = 80$\n$s = 40$\n\nNow, find the number of gold coins:\n$g = 40 + 30 = 70$\n\nThe answer is 70",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 34,
+   "gold": "23",
+   "pred": "23",
+   "fin": "stop",
+   "resp": "Raymond has 40 jewels. Half of Raymond's jewels is 20. Aaron has 5 more than this, so Aaron has 25 jewels. Siobhan has 2 fewer jewels than Aaron, so Siobhan has 23 jewels.\n\nThe answer is 23",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 35,
+   "gold": "9",
+   "pred": "9",
+   "fin": "stop",
+   "resp": "In the first 20 minutes, Mike scores 4 points. In the second 20 minutes, he scores 25% more points than the first 20 minutes. 25% of 4 points is 1 point, so he scores 4 + 1 = 5 points in the second half. His total points are 4 + 5 = 9.\n\nThe answer is 9",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 36,
+   "gold": "75",
+   "pred": "75",
+   "fin": "stop",
+   "resp": "Terry eats 2 yogurts a day for 30 days, so he eats a total of 2 * 30 = 60 yogurts. The yogurts are sold at 4 for $5.00, meaning each yogurt costs $5.00 / 4 = $1.25. For 60 yogurts, he spends 60 * $1.25 = $75.00. \n\nThe answer is 75",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 37,
+   "gold": "2",
+   "pred": "0",
+   "fin": "stop",
+   "resp": "John sold all 13 of his Lego sets, so he has 0 Lego sets left. The information about the video games and the $5 left over is extra information designed to distract from the question asked.\n\nThe answer is 0",
+   "ok": false,
+   "empty": false
+  },
+  {
+   "i": 38,
+   "gold": "10",
+   "pred": "10",
+   "fin": "stop",
+   "resp": "John runs 3 hours the first day and half as much (1.5 hours) on each of the other two days. \nTotal running time = 3 + 1.5 + 1.5 = 6 hours.\nTotal distance = 60 miles.\nSpeed = Distance / Time = 60 / 6 = 10 mph.\n\nThe answer is 10",
+   "ok": true,
+   "empty": false
+  },
+  {
+   "i": 39,
+   "gold": "18",
+   "pred": "18",
+   "fin": "stop",
+   "resp": "- Skip speed = 3 mph.\n- Run speed is twice the skip speed: 3 \u00d7 2 = 6 mph.\n- Walk speed is one-fourth the run speed: 6 \u00f7 4 = 1.5 mph.\n- In 6 hours, she runs 1/3 of the time: 2 hours, and walks 2/3 of the time: 4 hours.\n- Running distance: 6 \u00d7 2 = 12 miles.\n- Walking distance: 1.5 \u00d7 4 = 6 miles.\n- Total distance: 12 + 6 = 18 miles.\n\nThe answer is 18",
+   "ok": true,
+   "empty": false
+  }
+ ]
+}
