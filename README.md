@@ -1,4 +1,4 @@
-# GLM-5.2 (full, non-pruned) on a 4×DGX-Spark / GB10 cluster
+# GLM-5.2 (full, non-pruned) on a 4×DGX-Spark / GB10 cluster (Updated now with NVFP4 KV + increased context to 100k)
 
 Serving **full GLM-5.2** (753B MoE with DeepSeek Sparse Attention) TP=4 across four
 NVIDIA DGX Spark / GB10 (sm_121a, aarch64) nodes — on a **vLLM rebuilt from source**
@@ -7,6 +7,26 @@ with two custom sparse-attention mods and a working Marlin MoE path.
 To our knowledge this is the first public recipe that runs the **full** (un-pruned)
 GLM-5.2 on a *rebuilt* sm_121a vLLM with both DSA sparse mods **and** Marlin working —
 prior GB10 recipes rely on a 15 % expert prune to fit and use a prebuilt image.
+
+## 🆕 NVFP4 4-bit KV cache → 100K context (new)
+
+Added **`--kv-cache-dtype nvfp4_ds_mla`** — to our knowledge the **first NVFP4 4-bit KV cache
+on a DeepSeek-Sparse-Attention / MLA path on consumer Blackwell (GB10)**. Numerically validated
+(0.095 rel-Frobenius vs fp32, byte-exact vs flashinfer `nvfp4_kv_dequantize`) → now **serving
+coherently** TP=4.
+
+| Metric | fp8 baseline | **NVFP4 KV (new)** |
+|---|---|---|
+| Per-token KV | ~53 KiB | **~33 KiB (416 B/layer)** |
+| Max context (full model) | ~64K | **~112K (serving 100K)** |
+| KV pool @ util 0.87 | — | **118,720 tokens** |
+| Coherence | ✓ | **✓ (code + DSA reasoning correct)** |
+| Speed | ~13 tok/s | ~11.5 tok/s (single-stream + MTP) |
+
+Layout: 512×E2M1 NoPE latent + per-16 fp8 block scales (`amax/6`) + bf16 RoPE. The mod, kernels,
+numerical test, and idempotent patcher are in [`patches/nvfp4-mla-kv/`](patches/nvfp4-mla-kv/).
+**128K+ on the full model is weight-blocked** (needs util 0.88 > head's preflight ceiling) — the path
+to true 128K-256K is REAP-504B (frees ~24 GB/node of weights) **+** this NVFP4-KV mod.
 
 ## Results (thinking OFF, single-stream + MTP, ~13 tok/s)
 
