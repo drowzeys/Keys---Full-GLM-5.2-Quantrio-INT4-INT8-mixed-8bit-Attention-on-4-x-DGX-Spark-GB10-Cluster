@@ -18,6 +18,6 @@ docker run --gpus all -d --privileged --network host --ipc host --shm-size 10g -
     --nnodes 4 --node-rank $NODE_RANK --master-addr $MASTER --master-port 29501 $HEADLESS \
     --kv-cache-dtype fp8 --max-model-len 32768 --max-num-seqs 1 --gpu-memory-utilization 0.86 \
     --enforce-eager --num-gpu-blocks-override 768 \
-    --reasoning-parser glm45 --tool-call-parser glm47 \
+    --reasoning-parser glm45 --enable-auto-tool-choice --tool-call-parser glm47 \
     --speculative-config '{"method": "mtp", "num_speculative_tokens": 3}'
 sleep 2; docker ps --format '{{.Names}}|{{.Status}}'|grep glm_qt||echo "rank $NODE_RANK notup"

@@ -25,3 +25,25 @@ GLM-5.2 defaults to **thinking mode ON**. With `--reasoning-parser glm45`, the c
 `thinking_off → content="The capital of France is Paris."` (non-empty); thinking-on can return empty
 `content` on longer prompts. Keep thinking ON only for hard reasoning/math (GLM-5.2's strength), OFF for
 chat / coding / tool-call loops.
+
+---
+
+## Also: agent tool-calling — HTTP 400 `"auto" tool choice requires --enable-auto-tool-choice`
+
+### Symptom
+A tool-using agent (e.g. Hermes) sends `tool_choice: "auto"` and gets:
+```
+HTTP 400: "auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set
+```
+
+### Cause
+vLLM requires **both** flags for automatic tool selection. `--tool-call-parser glm47` alone is not
+enough — `--enable-auto-tool-choice` is its mandatory partner.
+
+### Fix
+Launch the server with both (GLM-5.2 uses the `glm47` tool-call parser):
+```
+--reasoning-parser glm45 --enable-auto-tool-choice --tool-call-parser glm47
+```
+Then `tool_choice: "auto"` requests succeed and the model emits `tool_calls`. Verified with a
+`get_weather` function call over the NVFP4 100K endpoint. (See `recipe/launch-glm52-tp4.sh`.)
