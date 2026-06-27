@@ -43,9 +43,9 @@ RUN bash /opt/mods/mla/run.sh                   # FLASHMLA_SPARSE: portable Trit
 ## 4. Launch TP=4 (per node; mp multi-node, NOT Ray)
 Use [`launch-glm52-tp4.sh`](launch-glm52-tp4.sh): workers (ranks 3,2,1) first, then head (rank 0).
 Key flags: `--tensor-parallel-size 4 --distributed-executor-backend mp --nnodes 4 --node-rank N
---master-addr <head> --master-port 29501 [--headless for workers] --kv-cache-dtype fp8
---max-model-len 32768 --max-num-seqs 1 --gpu-memory-utilization 0.86 --enforce-eager
---num-gpu-blocks-override 768 --reasoning-parser glm45 --tool-call-parser glm47
+--master-addr <head> --master-port 29501 [--headless for workers] --kv-cache-dtype nvfp4_ds_mla
+--max-model-len 102400 --max-num-seqs 2 --gpu-memory-utilization 0.88 --enforce-eager
+--reasoning-parser glm45 --enable-auto-tool-choice --tool-call-parser glm47
 --speculative-config '{"method":"mtp","num_speculative_tokens":3}'`.
 
 ### Memory notes (the head-rank gotcha)
