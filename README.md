@@ -1,4 +1,4 @@
-# GLM-5.2 (full, non-pruned) on a 4×DGX-Spark / GB10 cluster (Updated now with NVFP4 KV + increased context to 100k)
+# GLM-5.2 (full, non-pruned) on a 4×DGX-Spark / GB10 cluster (Updated: tuned recipe — 15.3 tok/s single / 28.9 tok/s @ C4)
 
 Serving **full GLM-5.2** (753B MoE with DeepSeek Sparse Attention) TP=4 across four
 NVIDIA DGX Spark / GB10 (sm_121a, aarch64) nodes — on a **vLLM rebuilt from source**
@@ -8,7 +8,31 @@ To our knowledge this is the first public recipe that runs the **full** (un-prun
 GLM-5.2 on a *rebuilt* sm_121a vLLM with both DSA sparse mods **and** Marlin working —
 prior GB10 recipes rely on a 15 % expert prune to fit and use a prebuilt image.
 
-## 🆕 NVFP4 4-bit KV cache → 100K context (new)
+## 🆕 Tuned serving results (2026-07) — full writeup in [`docs/TUNING-2026-07.md`](docs/TUNING-2026-07.md)
+
+| Test | Tuned result | Previously documented |
+|---|---|---|
+| Single-stream decode | **15.3 tok/s** | "~13" (undercounted — see below) |
+| C2 aggregate | **19.8 tok/s** | — |
+| **C4 aggregate** | **28.9 tok/s** | — |
+| Decode @ 18K-deep context | **13.7 tok/s** | — |
+| TTFT @ 18K prompt | 67 s (~270 tok/s prefill) | — |
+| KV pool @ util 0.86 | 73,728 tokens (64K ctx, 4 streams) | — |
+| Worst-case RAM headroom | 2–5 GiB/node | was 0–1 GiB |
+
+**What was tuned:** `max-num-seqs 2→4` (concurrency), **`--num-gpu-blocks-override 1152`**
+(vLLM's KV estimator computes **negative** blocks on GB10 unified memory — the override is
+mandatory, not optional), `VLLM_SPARSE_INDEXER_MAX_LOGITS_MB=256` + `max-num-batched-tokens 2048`
+(long-prompt RAM safety at zero TTFT cost), and a **corrected benchmark** — the old bench counted
+SSE chunks, but MTP delivers ~2–3 tokens per chunk, so every earlier speed was an undercount
+([`benchmarks/bench-true-tokens.sh`](benchmarks/bench-true-tokens.sh) counts `usage.completion_tokens`).
+Closed for good: **CUDA graphs / torch.compile are ~2× slower than eager** for GLM-5.2 DSA on
+sm_121a (3 variants tested), and a **root-zombie cleanup bug** (crashed runs held 106 GiB/node
+through non-root `kill`; cleanup must `sudo kill -9` + verify `nvidia-smi --query-compute-apps`
+per node). Tuned launchers: [`recipe/launch-cluster-tuned.sh`](recipe/launch-cluster-tuned.sh) +
+[`recipe/launch-glm52-tp4-tuned.sh`](recipe/launch-glm52-tp4-tuned.sh).
+
+## NVFP4 4-bit KV cache → 100K context
 
 Added **`--kv-cache-dtype nvfp4_ds_mla`** — to our knowledge the **first NVFP4 4-bit KV cache
 on a DeepSeek-Sparse-Attention / MLA path on consumer Blackwell (GB10)**. Numerically validated
@@ -28,7 +52,7 @@ numerical test, and idempotent patcher are in [`patches/nvfp4-mla-kv/`](patches/
 **128K+ on the full model is weight-blocked** (needs util 0.88 > head's preflight ceiling) — the path
 to true 128K-256K is REAP-504B (frees ~24 GB/node of weights) **+** this NVFP4-KV mod.
 
-## Results (thinking OFF, single-stream + MTP, ~13 tok/s)
+## Quality results (thinking OFF, single-stream + MTP — 15.3 tok/s true-token rate)
 
 | Category | Benchmark | Score |
 |---|---|---|
@@ -73,10 +97,12 @@ build CUDA-13.0 base → apply mods → distribute → launch). Launch script:
 - `docs/` — the nine-walls writeup, the SGLang TileLang DSA breakthrough, and the optimization analysis.
 - `benchmarks/` — runners + raw results.
 
-## Optimization (see [`docs/OPTIMIZATION.md`](docs/OPTIMIZATION.md))
-Apply: blocks-override 768→819, `max-num-batched-tokens 4096`, thinking-off default. Test: MTP-k sweep
-{2,3,4,5}, 64K context, `max-num-seqs 2`. Dead ends on this platform: **DFlash** (no GLM-5.2 drafter
-exists) and **Expert Parallel** (no memory win at TP=4 + throughput loss on the 200G fabric).
+## Optimization (see [`docs/OPTIMIZATION.md`](docs/OPTIMIZATION.md) + [`docs/TUNING-2026-07.md`](docs/TUNING-2026-07.md))
+2026-07 campaign settled the open items: **applied** — seqs 4, blocks-override 1152, BTOK 2048 +
+indexer logits cap, MTP k=3 (per-position acceptance shows k=4 not worth it). **Dead ends on this
+platform:** CUDA graphs/compile (~2× slower than eager), W4A4-NVFP4-via-Marlin (slower + garbage;
+native FP4 GEMM hardware-rejects sm_121a), **DFlash** (no GLM-5.2 drafter exists), and
+**Expert Parallel** (no memory win at TP=4 + throughput loss on the 200G fabric).
 
 ## Upcoming research & optimization
 
